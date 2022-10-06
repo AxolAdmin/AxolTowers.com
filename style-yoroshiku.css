@@ -73,7 +73,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navlinks a:nth-child(4) {
-    color: #000000;
+    color: #703EFF;
     font-weight: 700;
     animation: blinker 1.5s linear infinite;
 }
@@ -122,19 +122,20 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 3%;
 }
 
 .item h3 {
     width: 15%;
-    font-size: 1.75rem;
+    font-size: 1.2rem;
     font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #703EFF;
     color: #FFFFFF;
-    border-radius: 7px;
+    border-radius: 6px;
 }
 
 .item p:nth-child(2) {
@@ -153,6 +154,13 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: flex-end;
     color: #703EFF;
+}
+
+.item-2 {
+    width: 90%;
+    height: .35%;
+    background-color: #D8CAFF;
+    border-radius: 6px;
 }
 
 .center {
@@ -183,6 +191,34 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.center .arrows .arrow {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px #703EFF solid;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.center .arrows .arrow:hover {
+    background-color: #703EFF;
+    transition: .2s;
+}
+
+.center .arrows .arrow i {
+    font-size: 1.5rem;
+    color: #703EFF;
+}
+
+.center .arrows .arrow:hover i {
+    color: #FFFFFF;
+    transition: .2s;
 }
 
 .extra-info {
@@ -248,7 +284,11 @@ body::-webkit-scrollbar-thumb {
 .aerial-view {
     width: 100%;
     height: 50%;
-    border: 1px black solid;
+}
+
+.aerial-view img {
+    width: 100%;
+    height: 95%;
 }
 
 @keyframes blinker {
